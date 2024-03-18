@@ -22,15 +22,15 @@ const GalaxyGenerator: FC<AnimationsOptions> = () => {
      * Galaxy
      */
     const parameters = {
-      count: 30000,
-      size: 0.02,
-      radius: 5,
-      branches: 5,
-      spin: 1,
-      randomness: 0.8,
-      randomnessPow: 3,
-      insideColor: '#ff6030',
-      outsideColor: '#1b3984',
+      count: 30000, // 控制粒子数量
+      size: 0.02, // 粒子大小
+      radius: 5,  // 半径
+      branches: 5, // 分支
+      spin: 1,  // 弯曲基数
+      randomness: 0.8, // 随机基数
+      randomnessPow: 3, // 保证靠近中心粒子越多
+      insideColor: '#ff6030', // 内部颜色
+      outsideColor: '#1b3984', // 外部颜色
     }
 
     let geometry: Three.BufferGeometry | null = null
@@ -97,7 +97,7 @@ const GalaxyGenerator: FC<AnimationsOptions> = () => {
 
       gsap.to(points.rotation, {
         duration: 10,
-        y: Math.PI * 2,
+        y: -Math.PI * 2,
         repeat: -1,
         ease: 'linear'
       })

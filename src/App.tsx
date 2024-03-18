@@ -8,12 +8,13 @@ import Shadows from './16-shoadows/Shadows'
 import HauntedHouse from './17-HauntedHouse/HauntedHouse'
 import Particles from './18-Particles/Particles'
 import GalaxyGenerator from './19-Galaxy-Generator/GalaxyGenerator'
+import ScrollBasedAnimation from './20-ScrollBasedAnimation/ScrollBasedAnimation'
 
 function App() {
 
   return (
     <>
-      <GalaxyGenerator></GalaxyGenerator>
+      <ScrollBasedAnimation></ScrollBasedAnimation>
     </>
   )
 }

@@ -3,12 +3,21 @@
   margin: 0;
 }
 
-html,body {
-  overflow: hidden;
+html {
+  /* background-color: #1e1a20; */
+  height: 100vh;
+  width: 100vw;
 }
 
-body {
-  position: fixed;
-  left: 0;
-  top: 0;
+*::-webkit-scrollbar {
+  display: none;
+}
+
+/* html,body {
+  overflow: hidden;
+} */
+
+body,#root {
+  height: 100%;
+  width: 100%;
 }
