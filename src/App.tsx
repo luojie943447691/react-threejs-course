@@ -9,12 +9,14 @@ import HauntedHouse from './17-HauntedHouse/HauntedHouse'
 import Particles from './18-Particles/Particles'
 import GalaxyGenerator from './19-Galaxy-Generator/GalaxyGenerator'
 import ScrollBasedAnimation from './20-ScrollBasedAnimation/ScrollBasedAnimation'
+import Physics from './21-Physics/Physics'
+import ImportedModels from './22-ImportedModels/ImportedModels'
 
 function App() {
 
   return (
     <>
-      <ScrollBasedAnimation></ScrollBasedAnimation>
+      <ImportedModels></ImportedModels>
     </>
   )
 }
